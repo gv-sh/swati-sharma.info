@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("*.html");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("bundle.css");
-    eleventyConfig.addCollection("posts", function(collection) {
-        return collection.getFilteredByGlob("_posts/*.md");
+    eleventyConfig.addCollection("projects", function(collection) {
+        return collection.getFilteredByGlob("projects/*.md");
       });
 };

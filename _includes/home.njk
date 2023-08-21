@@ -8,8 +8,8 @@ title: Swati Sharma
     <h2>{{ greeting }}</h2>
     
     <div class="call-to-action">
-        <a class="primary" href="#">{{ callToAction }}</a><br/>
-        <p>Also: <i class="bi bi-shop"></i> I sell interesting hand-made things at &nbsp;<a href="#"><i class="bi bi-instagram"></i> bhayankari_devi</a></p>
+        <a class="primary" href="{{ email }}">{{ callToAction }}</a><br/>
+        <p>Also: <i class="bi bi-shop"></i> I sell interesting hand-made things at &nbsp;<a href="{{ instagramLink }}"><i class="bi bi-instagram"></i> bhayankari_devi</a></p>
     </div>
 </div>
 
@@ -56,7 +56,7 @@ title: Swati Sharma
             <td width="70%">Figma / Framer; Wix / Squarespace / Ghost; HTML / CSS / JS</td>
         </tr>
     </table>
-    <p>Also: Checkout my studio — <a href="#">M56</a> for a wider range of design related services.</p>
+    <p>Also: Checkout my studio — <a href="https://mimo56.com">M56</a> for a wider range of design related services.</p>
 </div>
 
 
@@ -74,21 +74,23 @@ title: Swati Sharma
 </div>
 
 <div class="grid">
-  {% for post in collections.posts %}
-    <div class="grid-item" data-category="{{ post.data.category }}">
-      <a href="{{ post.url }}">
-        <img src="{{ post.data.image }}" alt="{{ post.data.title }}">
+  {% for project in collections.projects %}
+    <div class="grid-item" data-category="{{ project.data.category }}">
+      <a href="{{ project.url }}">
+        <img src="{{ project.data.image }}" alt="{{ project.data.title }}">
         <div class="overlay">
-          <p>{{ post.data.title }}</p>
+          <p>{{ project.data.title }}</p>
         </div>
       </a>
     </div>
+    <div class="gutter-sizer"></div>
   {% endfor %}
 </div>
 
+
 <div class="welcome">
     <div class="call-to-action">
-        <a class="primary" href="#">{{ callToAction }}</a><br/>
-        <p>Also: <i class="bi bi-shop"></i> I sell interesting hand-made things at &nbsp;<a href="#"><i class="bi bi-instagram"></i> bhayankari_devi</a></p>
+        <a class="primary" href="{{ email }}">{{ callToAction }}</a><br/>
+        <p>Also: <i class="bi bi-shop"></i> I sell interesting hand-made things at &nbsp;<a href="{{ instagramLink }}"><i class="bi bi-instagram"></i> bhayankari_devi</a></p>
     </div>
 </div>

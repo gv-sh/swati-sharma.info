@@ -7,8 +7,9 @@ callToAction: Let's work together — Send me a message
 shopText: I sell interesting hand-made things at
 instagramHandle: bhayankari_devi
 instagramLink: https://www.instagram.com/bhayankari_devi
-linkedInLink: https://www.linkedin.com/in/swati-sharma-1b1b0b1a/
-cvLink: 
+linkedInLink: https://www.linkedin.com/in/arcturus23/
+cvLink: /assets/swati-cv.pdf
+email: "mailto:arcturus23.swati@gmail.com"
 keyCollaborators:
     - name: Northumbria University
       link: https://www.northumbria.ac.uk/
