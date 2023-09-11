@@ -27,6 +27,12 @@ p {
     line-height: 1.5;
 }
 
+em {
+    color: var(--tertiary);
+    font-style: normal;
+    font-weight: 500;
+}
+
 h1 {
     font-family: 'Newsreader', serif;
     font-weight: 400;
